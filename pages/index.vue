@@ -48,5 +48,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+  }
+
+  @media (min-width: 35rem) {
+    #posts {
+      flex-direction: row;
+    }
   }
 </style>
