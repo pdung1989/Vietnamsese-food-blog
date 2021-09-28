@@ -1,41 +1,39 @@
 <template>
-  <section class="container">
-    <nuxt-link 
+  <section id="posts">
+    <PostPreview 
       v-for="post in posts"
       :key="post.id"
-      to="post.id"
-    >
-      <article class="post-preview">
-        <div
-          :style="{backgroundImage: post.thumbnailUrl}" 
-          class="post-preview-thumbnail">
-        </div>
-        <div class="post-preview-content">
-          <h1>{{ post.title }}</h1>
-          <p>{{ post.prevewText }}</p>
-        </div>
-      </article>
-    </nuxt-link>
+      :title="post.title"
+      :previewText="post.previewText"
+      :thumbnailImage="post.thumbnailUrl"
+      :id="post.id"/>
   </section>
 </template>
 
 <script>
+  import PostPreview from '@/components/Blog/PostPreview';
+
   export default {
+    components: {
+      PostPreview
+    },
+
     data() {
       return {
         posts: [
           {
             title: "Pho Noodle Soup",
-            prevewText: 'The Vietnamese traditional noodle soup you must try!',
+            previewText: 'The Vietnamese traditional soup you must try!',
             thumbnailUrl:
-              "https://www.hungryhuy.com/chicken-pho-recipe/",
+              "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80"
+              ,
             id: "pho"
           },
           {
-            title: "Vienamese sandwich - Banh mi",
-            prevewText: 'The great special sandwich of the world!',
+            title: "Vienamese Banh mi",
+            previewText: 'The great special sandwich of the world!',
             thumbnailUrl:
-              "https://www.hungryhuy.com/banh-mi-recipe/",
+              "https://images.unsplash.com/photo-1600454309261-3dc9b7597637?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=626&q=80",
             id: "banhmi"
           }
         ]
@@ -44,5 +42,11 @@
   };
 </script>
 
-<style>
+<style scoped>
+  #posts {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 </style>

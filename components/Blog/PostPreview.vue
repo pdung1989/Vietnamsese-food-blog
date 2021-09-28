@@ -3,11 +3,11 @@
     to="id">
     <article class="post-preview">
       <div
-        :style="{backgroundImage: thumbnailUrl}" 
+        :style="{backgroundImage: 'url(' + thumbnailImage + ')'}" 
         class="post-preview-thumbnail"></div>
       <div class="post-preview-content">
         <h1>{{ title }}</h1>
-        <p>{{ prevewText }}</p>
+        <p>{{ previewText }}</p>
       </div>
     </article>
   </nuxt-link>
@@ -40,11 +40,11 @@ export default {
 <style>
 a {
   text-decoration: none;
-  color: black
+  color: black;
 }
 
 .post-preview {
-  margin: auto;
+  margin: 1rem;
   height: 20rem;
   width: 90%;
   border-radius: 4px;
@@ -55,11 +55,18 @@ a {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 10rem
+  height: 13rem;
 }
 
 .post-preview-content {
-  
+  text-align: center;
+  margin: auto;
+  padding: 0.5rem;
 }
 
+@media (min-width: 35rem) {
+  .post-preview {
+    width: 25rem;
+  }
+}
 </style>
