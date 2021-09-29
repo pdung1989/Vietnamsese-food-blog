@@ -19,21 +19,21 @@
     },
 
     asyncData(context) {
-      return context.app.$storyapi
+    return context.app.$storyapi
       .get('cdn/stories', {
-        version: 'draft',
+        version: "draft",
         starts_with: 'blog/'
       })
       .then(res => {
         return {
-          posts: res.data.stories.map(blogPost => {
-          return {
-            id: blogPost.slug,
-            title: blogPost.content.title,
-            previewText: blogPost.content.summary,
-            thumbnailUrl: blogPost.content.thumbnail
-          }
-        })
+          posts: res.data.stories.map(bp => {
+            return {
+              id: bp.slug,
+              title: bp.content.title,
+              previewText: bp.content.summary,
+              thumbnailUrl: bp.content.thumbnail
+            };
+          })
         };
       });
     }

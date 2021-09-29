@@ -39,7 +39,6 @@
     display: flex;
     margin: 0;
     padding: 0;
-    display: flex;
     height: 100%;
     justify-content: center;
     align-items: center;

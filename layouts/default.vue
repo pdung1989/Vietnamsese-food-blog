@@ -25,6 +25,7 @@ export default {
 
 body {
   font-family: 'Lora', serif;
+  margin: 0;
 }
 
 .main {

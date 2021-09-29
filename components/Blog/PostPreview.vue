@@ -1,6 +1,6 @@
 <template>
   <nuxt-link 
-    to="id">
+    :to="id">
     <article class="post-preview">
       <div
         :style="{backgroundImage: 'url(' + thumbnailImage + ')'}" 
