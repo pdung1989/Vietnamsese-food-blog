@@ -66,9 +66,6 @@
   #posts {
     padding-top: 1rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
   }
 
   @media (min-width: 35rem) {

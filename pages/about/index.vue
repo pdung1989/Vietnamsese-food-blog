@@ -25,7 +25,8 @@ export default {
   #about-page {
     width: 80%;
     max-width: 400px;
-    margin: auto
+    margin: auto;
+    color: rgb(23, 92, 89);;
   }
 
   #about-page p {

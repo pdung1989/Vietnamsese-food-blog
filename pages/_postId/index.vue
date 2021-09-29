@@ -33,25 +33,26 @@ export default {
     background-position: center; 
     background-repeat: no-repeat;
     width: 50%; 
-    height: 80%;
-    border-radius: 25px;
+    border-radius: 35px;
   }
 
   .post-content {
     width: 50%;
     max-width: 500px;
-    margin: auto
+    margin: auto;
+    padding-left: 1rem
   }
 
   .post-content p {
     white-space: pre-line;
+  
   }
 
   #post {
     display: flex;
     margin: 1rem;
-    padding: 1rem;
-    height: 50rem;
+    padding: 3rem;
+    height: 35rem;
     width: 100%;
     border-radius: 4px;
     box-shadow: 1px 1px 3px 1px rgb(41, 35, 35);
