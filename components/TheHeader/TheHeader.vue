@@ -1,9 +1,11 @@
 <template>
   <header class="main-header">
-    <p class="title">Vietnamese Food Blog</p>
     <nav class="main-nav">
-        <nuxt-link to="/" class="nav-link"><a>All Posts</a></nuxt-link>
-        <nuxt-link to="/about" class="nav-link"><a>About</a></nuxt-link>
+      <p class="title">Vietnamese Food Blog</p>
+      <ul class="nav-links">
+        <nuxt-link to="/" class="nav-link" tag="li"><a>All Posts</a></nuxt-link>
+        <nuxt-link to="/about" class="nav-link" tag="li"><a>About</a></nuxt-link>
+      </ul>
     </nav>
   </header>
 </template> 
@@ -29,7 +31,12 @@
   }
 
   .main-nav {
+    height: 100%;
+  }
+
+  .nav-links {
     list-style: none;
+    display: flex;
     margin: 0;
     padding: 0;
     display: flex;
@@ -39,7 +46,6 @@
   }
 
   .nav-link {
-    display: block;
     text-decoration: none;
     color: rgb(8, 62, 59);
     height: 100%;
