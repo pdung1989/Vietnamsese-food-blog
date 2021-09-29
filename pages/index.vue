@@ -41,9 +41,13 @@
 </script>
 
 <style scoped>
+
   #posts {
-    padding-top: 1rem;
+    padding-top: 2rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   @media (min-width: 35rem) {
