@@ -38,6 +38,7 @@ export default {
 </script>
 
 <style>
+
 a {
   text-decoration: none;
   color: black;
@@ -69,4 +70,5 @@ a {
     width: 25rem;
   }
 }
+
 </style>
