@@ -1,9 +1,9 @@
 # Vietnamese-food-blog
 This is my personel food blog app which describe various Vietnamese cuisine.
 
-Front-end: Vuejs, Nuxtjs 
-Back-end: storyBlok flatform
-Stylesheet: CSS
+- Front-end: Vuejs, Nuxtjs 
+- Back-end: storyBlok flatform
+- Stylesheet: CSS
 
 ## Link to the website:
 https://vietmamese-food-blog.netlify.app/
