@@ -1,5 +1,6 @@
 <template>
   <header class="main-header">
+    <p class="title">Vietnamese Food Blog</p>
     <nav class="main-nav">
         <nuxt-link to="/" class="nav-link"><a>All Posts</a></nuxt-link>
         <nuxt-link to="/about" class="nav-link"><a>About</a></nuxt-link>
@@ -9,13 +10,22 @@
 
 
 <style scoped>
+
   .main-header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background: rgb(136, 233, 225);
-    height:70px;
+    height: 80px;
+  }
+
+  .title {
+    float: left;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    color: rgb(23, 92, 89);
   }
 
   .main-nav {
@@ -23,9 +33,9 @@
     margin: 0;
     padding: 0;
     display: flex;
+    height: 100%;
     justify-content: center;
     align-items: center;
-    height: 100%;
   }
 
   .nav-link {
