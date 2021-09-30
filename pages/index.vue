@@ -43,16 +43,21 @@
 <style scoped>
 
   #posts {
-    padding-top: 2rem;
-    display: flex;
+    padding-top: 1rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: repeat(3, 400px);
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
 
-  @media (min-width: 35rem) {
+  @media (max-width: 35rem) {
     #posts {
-      flex-direction: row;
+      grid-auto-flow: row;
+      grid-template-columns: repeat(1, 500px);
+      grid-template-rows: repeat(1, 400px);
     }
   }
 </style>
